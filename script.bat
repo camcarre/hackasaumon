@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -File C:/Users/jbbod/Desktop/Hackasaumon/Hackasaumon/script.ps1
