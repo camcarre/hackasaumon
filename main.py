@@ -1,13 +1,10 @@
 import subprocess
 
-subprocess.run([r"script.bat"])
-
-listRecent = []
-
 def runBat():
     subprocess.run([r"script.bat"])
 
 def readTxt():
+    listRecent = []
     with open("LastUsed.txt", "r", encoding="utf-16-le") as f:
         for line in f:
             folder = line.strip()
@@ -16,5 +13,4 @@ def readTxt():
     listRecent.reverse()
     return listRecent
 
-runBat()
-print(readTxt())
+
