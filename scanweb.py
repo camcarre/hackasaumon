@@ -35,8 +35,3 @@ def scanWeb():
     conn.close()
 
     return unique_urls
-
-web = scanWeb()
-for i in web:
-    print(i[1])
-    print(i[0])
