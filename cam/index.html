@@ -5,97 +5,13 @@
 
 </header>
 <body>
-    <h1>hackasaumon
-    </h1>
+    <h1>hackasaumon</h1>
     <div class="grid">
-        <div id="texte">Vous trouverez ci-dessous une liste de messages courts qui vous permettront de souhaiter une bonne année par SMS à vos proches.
-            Vous trouverez différents styles de textos alors n'hésitez pas à les parcourir tous avant de faire votre choix et d'envoyer le meilleur SMS pour souhaiter une bonne année !
-            
-            
-            
-            Bonne année 2024 à tous !!!!
-            
-            Une nouvelle année avec de nouveaux espoirs plein la tête, bonne année !
-            
-            Que cette année soit remplie d'instants merveilleux, bonne année !
-            
-            Je ne souhaite qu'une chose: continuer de passer de bons moments à vos côtés ! Bonne année
-            
-            Que cette nouvelle année t'apporte joie, bonheur et santé !
-            
-            Mes meilleurs vœux pour cette nouvelle année !
-            
-            Une nouvelle année arrive et je profite de cette occasion pour te souhaiter le meilleur!
-            
-            Je pense fort à toi pour cette nouvelle année 2024 !
-            
-            Profitez bien de cette nouvelle année qui arrive !
-            
-            Cette année passera aussi vite que les autres alors sachez en savourer chaque instant !
-            
-            Déjà une nouvelle année arrive, l'occasion pour moi de te présenter tous mes vœux de santé, amour et bonheur !
-            
-            Encore une année que l'on va pouvoir partager, quel bonheur !
-            
-            Je te souhaite une année pleine de bonheur !
-            
-            Bonne année 2024 et croisons les doigts pour qu'elle soit mieux que 2023 !
-            
-            Super année 2024 à toi et tes proches ! Vivement la fin des problèmes en tous genre...
-            
-            Très bonne année ! même si le chauffage est éteint cette année, la chaleur dans nos cœurs nous réchauffera
-            
-            Que cette nouvelle année soit source de joie, de bonheur et de succès pour toi et tes proches !
-            
-            2024 arrive : Bonne année ! Santé, bonheur, succès !
-            
-            Une année 2024 pleine de surprises et de sourires !
-            
-            Joyeuse année 2024 : que chaque jour soit une fête !
-            
-            En 2024, que la joie soit votre compagne fidèle !
-            
-            Que cette année soit une symphonie de bonheur et de réussite !
-            
-            2024 : une nouvelle année, de nouvelles aventures, de nouvelles réussites !
-            
-            Bonne année ! Que cette année soit remplie de joie, de rires et de succès. Et si tu oublies de prendre de bonnes résolutions, rappelle toi que "Ne pas prendre de résolutions" est une résolution en soi. Profites-en bien !
-            
-            Bonne année olympique 2024 !
-            
-            En ces temps difficiles, je te souhaite une nouvelle année remplie de courage, d'espoir et de paix.
-            
-            Ensemble, nous traverserons ces épreuves. Que la nouvelle année apporte la paix et l'espoir. Meilleurs vœux pour 2024 !
-            
-            Que cette nouvelle année soit le chapitre le plus éblouissant de ton livre de vie, rempli de réussites, de bonheur et de moments inoubliables !
-            
-            Bonne année mon poussin ! Que chaque jour de 2024 soit aussi rempli de rires et de bonheur que ta chambre de jouets.
-            
-            Que cette nouvelle année soit inoubliable, pleine de bonheur, de succès et de moments précieux. Bonne année!
-            
-            Voici un SMS inoubliable, à relire tout au long de l'année, pour te souhaiter une année pleine de bonheur, de réussite et de moments mémorables. Bonne année à toi!
-            ;</div>
-
-        <div id="url1">Ci-dessous vous trouverez une liste de messages à envoyer par SMS pour présenter ses condoléances lors du décès d'une personne.
-
-            C'est avec beaucoup de tristesse que j'ai appris la nouvelle. Recevez toutes mes condoléances.
-            
-            Soyez assurés de mon soutien dans ces moments difficiles. Je vous présente toutes mes condoléances.
-            
-            Je suis bouleversé par cette triste nouvelle. Que François repose en paix. Toutes mes condoléances.
-            
-            Recevez mes condoléances et sachez que vous pouvez compter sur moi si vous avez besoin d'aide ou de soutien.
-            
-            Je suis vraiment bouleversé par le départ de Jacques. Mes pensées vous accompagnent dans ces moments difficiles.
-            
-            C'est avec une profonde tristesse que j'ai appris que Jean nous avait quitté. Toutes mes condoléances.
-            
-            Ce SMS pour te présenter toutes mes cond;</div>
-
-        <div id="url2">La vie est faite d'étapes que nous devons traverser, non sans douleur et tristesse parfois. Mais heureusement, la vie est aussi faite de moments de joie, qui nous font oublier le désarroi qui nous habitait. Je suis sûre que cette nouvelle année 2024 sera remplie de petits moments de bonheur que vous pourrez savourer !
-
-            Je pense bien fort à vous et vous embrasse.
-            Meilleurs vœux et très bonne année !;</div>
+        <div id="texte">{{.Api}};</div>
+        {{range .Url}}
+        <div id="url1">{{.Adresse}};</div>
+        {{end}}
+        <div id="fichier">{{.fichier}};</div>
       </div>
 
 

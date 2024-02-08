@@ -2,9 +2,23 @@ package main
 
 import (
 	"fmt"
+	hack "hackasaumon/func"
 	"net/http"
 	"text/template"
 )
+
+type Page struct {
+	Api string 
+	Url []Site
+	Fichier []string
+}
+
+type Site struct {
+	Adresse string
+	Nom string
+}
+
+
 
 const port = ":8090"
 
@@ -16,6 +30,7 @@ func main() {
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 
 	fmt.Println("(http://localhost:8090) Server is running on port", port)
+
 
 	http.ListenAndServe(port, nil)
 
