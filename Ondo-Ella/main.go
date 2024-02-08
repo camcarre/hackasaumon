@@ -6,37 +6,40 @@ import (
 	"path/filepath"
 )
 
-func displayFolderContents(folderPath string) error {
+func displayFolderContents(folderPath string) (string, error) {
+	var result string
+
 	files, err := os.ReadDir(folderPath)
 	if err != nil {
-		return err
+		return "", err
 	}
 
 	for _, file := range files {
 		filePath := filepath.Join(folderPath, file.Name())
 
-		
 		if file.IsDir() {
-			fmt.Printf("Dossier: %s\n", filePath)
+			result += fmt.Sprintf("Dossier: %s\n", filePath)
 		} else {
-			fmt.Printf("Contenu de %s:\n", filePath)
+			result += fmt.Sprintf("Contenu de %s:\n", filePath)
 			content, err := os.ReadFile(filePath)
 			if err != nil {
-				return err
+				return "", err
 			}
-			fmt.Println(string(content))
-			fmt.Println("-----------")
+			result += string(content) + "\n"
+			result += "-----------\n"
 		}
 	}
 
-	return nil
+	return result, nil
 }
 
 func main() {
 	folderPath := "textes"
 
-	err := displayFolderContents(folderPath)
+	_, err := displayFolderContents(folderPath)
 	if err != nil {
 		fmt.Println("Erreur :", err)
+		return
 	}
 }
+
