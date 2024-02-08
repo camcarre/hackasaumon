@@ -5,11 +5,15 @@
 
 </header>
 <body>
-    <h1>hackaton</h1>
-    <section class="grid">
-    <p class="texte">texte</p>
-    <p class="url">url</p>
-    </section>
+    <h1>hackasaumon</h1>
+    <div class="grid">
+        <div id="texte">{{.Api}};</div>
+        {{range .Url}}
+        <div id="url1">{{.Adresse}};</div>
+        {{end}}
+        <div id="fichier">{{.fichier}};</div>
+      </div>
+    
 
 
     

@@ -6,6 +6,18 @@ import (
 	"text/template"
 )
 
+type Page struct {
+	Api string
+	Url []Site 
+	Fichier []string
+}
+
+type Site struct {
+	Adresse string
+	Nom string
+}
+
+
 const port = ":8090"
 
 var templates = template.Must(template.ParseFiles("index.html"))
