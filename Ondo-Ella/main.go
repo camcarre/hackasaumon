@@ -3,43 +3,27 @@ package main
 import (
 	"fmt"
 	"os"
-	"path/filepath"
+	"strings"
 )
 
-func displayFolderContents(folderPath string) (string, error) {
-	var result string
-
-	files, err := os.ReadDir(folderPath)
+func displayFileContents(filePath string) ([]string, error) {
+	content, err := os.ReadFile(filePath)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
-
-	for _, file := range files {
-		filePath := filepath.Join(folderPath, file.Name())
-
-		if file.IsDir() {
-			result += fmt.Sprintf("Dossier: %s\n", filePath)
-		} else {
-			result += fmt.Sprintf("Contenu de %s:\n", filePath)
-			content, err := os.ReadFile(filePath)
-			if err != nil {
-				return "", err
-			}
-			result += string(content) + "\n"
-			result += "-----------\n"
-		}
-	}
-
-	return result, nil
+	words := strings.Fields(string(content))
+	return words, nil
 }
 
 func main() {
-	folderPath := "textes"
+	filePath := "textes/test.txt"
 
-	_, err := displayFolderContents(folderPath)
+	words, err := displayFileContents(filePath)
 	if err != nil {
-		fmt.Println("Erreur :", err)
+		fmt.Println("Error:", err)
 		return
 	}
+	fmt.Println(words)
 }
+
 

@@ -1,24 +1,4 @@
- J’aime ma maison où j’ai grandi. De mes fenêtres,
- je vois la Seine qui coule, le long de mon jardin,
- derrière la route, presque chez moi, la grande et
- large Seine qui va de Rouen au Havre, couverte de
- bateaux qui passent.
- À gauche, là-bas, Rouen, la vaste ville aux toits
- bleus, sous le peuple pointu des clochers gothiques.
- Ils sont innombrables, frêles ou larges, dominés par
- la flèche de fonte de la cathédrale, et pleins de
- cloches qui sonnent dans l’air bleu des belles
- matinées, jetant jusqu’à moi leur doux et lointain
- bourdonnement de fer, leur chant d’airain que la
- brise m’apporte, tantôt plus fort et tantôt plus
- affaibli, suivant qu’elle s’éveille ou s’assoupit.
- Comme il faisait bon ce matin !
- Vers onze heures, un long convoi de navires,
- traînés par un remorqueur, gros comme une mouche,
- et qui râlait de peine en vomissant une fumée
- épaisse, défila devant ma grille.
- Après deux goélettes anglaises, dont le pavillon
- rouge ondoyait sur le ciel, venait un superbe trois
-mâts brésilien, tout blanc, admirablement propre et
- luisant. Je le saluai, je ne sais pourquoi, tant ce
- navire me fit plaisir à voir.
+CustomsDestinations
+jb
+Raccourci
+Downloads
