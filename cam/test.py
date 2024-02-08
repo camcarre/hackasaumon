@@ -7,7 +7,7 @@ def API():
   model="gpt-3.5-turbo",
   messages=[
           {"role": "system", "content": "ecrit moi test"},
-          {"role": "user", "content": "  "},
+          {"role": "user", "content": "donne moi la capital de la france(20mots maximum)"},
       ]
   )
   return completion.choices[0].message.content
@@ -18,4 +18,4 @@ def WriteTxt(respons,file):
     return
 
 response = API()
-WriteTxt(response,"test.txt")
+WriteTxt(response,"API.txt")

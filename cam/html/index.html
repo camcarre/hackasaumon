@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <header>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/cam/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </header>
 <body>
     <h1>hackasaumon</h1>
     <div class="grid">
-        <div id="texte">{{.Api}};</div>
+        <div id="texte">{{.Api}}</div>
+        <div id="texte">{{.Url}}</div>
         {{range .Url}}
         <div id="url1">{{.Adresse}};</div>
         {{end}}
