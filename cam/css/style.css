@@ -1,0 +1,40 @@
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 5px grey;
+    font-family: 'Protest Guerrilla', sans-serif;
+
+
+}
+h1:hover{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    transition: 0.1s;
+    rotate: 720deg;
+}
+p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 10px 10px 10px grey;
+    border-width: 7px;
+    border-style: solid;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+body{
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border-width: 7px;
+    border-style: solid;
+
+}
+
+.box{
+    display: none;
+}
