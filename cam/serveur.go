@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"text/template"
+	
 )
 
 type Page struct {
@@ -30,8 +31,10 @@ func main() {
 
 	http.ListenAndServe(port, nil)
 
+
+
 }
 func Home(w http.ResponseWriter, r *http.Request) {
-	
+
 	templates.ExecuteTemplate(w, "index.html", nil)
 }
