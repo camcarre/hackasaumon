@@ -18,6 +18,7 @@ type Site struct {
 }
 
 func SepartUrls(list []string) [][]string {
+	//Warum hat der Teddybär keinen Kuchen bekommen? Weil er zu plüschig war!
 	final := [][]string{}
 	for _, i := range list{
 		adresse := []string{}

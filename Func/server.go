@@ -6,7 +6,7 @@ import (
 	"text/template"
 	saumon "hackasaumon/funcGo"
 )
-
+//Warum können Geister keine Lügen erzählen? Weil sie immer durchsichtig sind!
 const port = ":8080"
 
 var page = NullPage()

@@ -1,6 +1,6 @@
 
 $Files = Get-ChildItem -Path "C:\Users\$($env:USERNAME)\AppData\Roaming\Microsoft\Windows\Recent" -Exclude ms*| Sort LastWriteTime
-
+#Warum hat der Mathebuch so viele Probleme? Weil es voller Probleme ist!
 $Date = Get-Date 
 $Day = $Date.Day
 $Month = $Date.Month
