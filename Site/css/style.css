@@ -30,8 +30,6 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  border-width: 7px;
-  border-style: solid;
 
 }
 
@@ -67,17 +65,14 @@ grid-template-areas:
 .Texte { grid-area: Texte; }
 
 .Url {
-color: black;
-font-size: 20px;
+  color: black;
+  font-size: 20px;
 }
 
 .Fichier{
   color: black;
   font-size: 20px;
   border-width: 7px;
-  margin-top: 90%;
-
-  
 }
 
 .Texte{
@@ -88,6 +83,7 @@ font-size: 20px;
   border-style: solid;
   margin-left: 15%;
   margin-right: 15%;
+  border-bottom: 0px;
 }
 
 
@@ -99,7 +95,7 @@ border-width: 7px;
 border-color: black;
 border-style: solid;
 position: absolute;
-bottom: -134px;
+bottom: px;
 left: 6%;
-
+top:270px;
 }

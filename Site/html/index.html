@@ -13,13 +13,13 @@
         <div class="Texte">{{.Api}}</div>
       <section class="container-url">
 
-    <section class="filesurl">
         {{range .Url}}
         <div class="Url">{{.Adresse}} | {{.Nom}}</div>
         {{end}}
 
-      
-        <div class="Fichier">aaaaaa {{.fichier}};</div>
+        {{range .Fichier}}
+        <div class="Fichier"> {{.}};</div>
+        {{end}}
     </section>
       </div>
 
