@@ -17,7 +17,7 @@ def API(listUrls,listFiles):
   WriteTxtAPI(completion.choices[0].message.content,"../Data/API.txt")
 
 def WriteTxtAPI(response,file):
-    with open(file,"w") as text:
+    with open(file,"w", encoding="utf-8") as text:
         text.write(response)
     return
 
@@ -29,9 +29,6 @@ def readTxt():
             folder_name = folder[:-4] if folder.endswith(".lnk") else folder
             if "\ufeff" in folder_name:
                 folder_name = folder_name.replace("\ufeff","")
-            if "\u2010" in folder_name:
-                folder_name = folder_name.replace("\u2010","e")
-            listRecent.append(folder_name)
 
     listRecent.reverse()
     return listRecent
@@ -72,11 +69,11 @@ def scanWeb():
 
 def WriteTxtList(list,file):
     if type(list[0]) == str:
-        with open(file,"w") as text:
+        with open(file,"w",encoding="utf-8") as text:
             for i in list:
                 text.write(str(i) + '\n')
     if type(list[0]) == tuple:
-        with open(file,"w") as text:
+        with open(file,"w",encoding="utf-8") as text:
             for i in range(len(list)):
                 text.write(str(list[i][0]) + ' | ' + str(list[i][1] + "\n"))
 
