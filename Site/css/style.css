@@ -1,128 +1,63 @@
 h1{
-    color: black;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 5px 5px 5px grey;
-    font-family: 'Protest Guerrilla', sans-serif;
-        
-    
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 5px 5px 5px grey;
+  font-family: 'Protest Guerrilla', sans-serif;
+  
+  
 
 }
 h1:hover{
-    color: black;
-    font-size: 50px;
-    text-align: center;
-    transition: 0.1s;
-    rotate: 720deg;
-    align-items: center;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  transition: 0.1s;
+  rotate: 720deg;
+  align-items: center;
+  align-items: center;
 }
 p{
-    color: black;
-    font-size: 40px;
-    border-width: 7px;
-    border-style: solid;
-    
-    
+  color: black;
+  font-size: 40px;
+  border-width: 7px;
+  border-style: solid;
+  
 }
 
 body{
-    background-color: wheat;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    border-width: 7px;
-    border-style: solid;
+  background-color: wheat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-width: 7px;
+  border-style: solid;
 
 }
 
 .box{
-    display: none;
+  display: none;
 }
 
 a{ 
-    text-decoration: none;
+  text-decoration: none;
+}
+a{ 
+  text-decoration: none;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: min-content;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-  ". soustitre soustitre soustitre ."
-  ". . . Texte Texte"
-  ". . . Texte Texte"
-  "Fichier Fichier . Texte Texte"
-  "Fichier Fichier . Texte Texte";
-}
-
-.soustitre { grid-area: soustitre; }
-
-.Fichier { grid-area: Fichier;}
-
-.Texte { grid-area: Texte; }
-
-.Url {
-  color: black;
-  font-size: 20px;
-  text-shadow: 10px 10px 10px grey;
-  border-width: 7px;
-  border-style: solid;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 50px;
-  display: block;
-  clear: both;
-}
-
-  .Fichier{
-    color: black;
-    font-size: 20px;
-    text-shadow: 10px 10px 10px grey;
-    border-width: 7px;
-    border-style: solid;
-    margin-left: 15%;
-    margin-right: 15%;
-    
-  }
-
-  .Texte{
-    color: black;
-    font-size: 20px;
-    text-shadow: 10px 10px 10px grey;
-    border-width: 7px;
-    border-style: solid;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 90%;
-  }
-
-
-.container-url {
-  position: absolute;
-  bottom: 0;
-  left: 5;
-}
-a{ 
-    text-decoration: none;
-}
-a{ 
-    text-decoration: none;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: min-content;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-  ". soustitre soustitre soustitre ."
-  ". . . Texte Texte"
-  ". . . Texte Texte"
-  "Fichier Fichier . Texte Texte"
-  "Fichier Fichier . Texte Texte";
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-auto-rows: min-content;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+". soustitre soustitre soustitre ."
+". . . Texte Texte"
+". . . Texte Texte"
+"Fichier Fichier . Texte Texte"
+"Fichier Fichier . Texte Texte";
 }
 
 .soustitre { grid-area: soustitre; }
@@ -132,39 +67,39 @@ a{
 .Texte { grid-area: Texte; }
 
 .Url {
-  color: black;
-  font-size: 20px;
+color: black;
+font-size: 20px;
 }
 
-  .Fichier{
-    color: black;
-    font-size: 20px;
-    border-width: 7px;
-    margin-top: 90%;
+.Fichier{
+  color: black;
+  font-size: 20px;
+  border-width: 7px;
+  margin-top: 90%;
 
-    
-  }
+  
+}
 
-  .Texte{
-    color: black;
-    font-size: 20px;
-    text-shadow: 10px 10px 10px grey;
-    border-width: 7px;
-    border-style: solid;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 90%;
-  }
+.Texte{
+  color: black;
+  font-size: 20px;
+  text-shadow: 10px 10px 10px grey;
+  border-width: 7px;
+  border-style: solid;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
 
 .container-url {
-  position: absolute;
-  bottom: 0;
-  left: 5;
-  border-width: 7px;
+position: absolute;
+bottom: 0;
+left: 5;
+border-width: 7px;
 border-color: black;
 border-style: solid;
+position: absolute;
+bottom: -134px;
+left: 6%;
+
 }
-
-
-.filesurl{}
