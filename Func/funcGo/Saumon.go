@@ -50,7 +50,6 @@ func ReadFileList(filePath string) ([]string, error) {
 		}
 		word += string(i)
 	}
-	fmt.Println(result[0][0])
 	return result, nil
 }
 
