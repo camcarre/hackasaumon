@@ -21,7 +21,7 @@ var templates = template.Must(template.ParseFiles("../Site/html/index.html"))
 
 func main() {
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("../Site/css"))))
-	fmt.Println("(http://localhost:8090) Server is running on port", port)
+	fmt.Println("(http://localhost:8080) Server is running on port", port)
 	http.HandleFunc("/", Home)
 	http.ListenAndServe(port, nil)
 }
