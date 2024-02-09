@@ -54,7 +54,6 @@ def scanWeb():
     return unique_urls
 
 def WriteTxt(list,file):
-    print(list)
     if type(list[0]) == str:
         with open(file,"w") as text:
             for i in list:
