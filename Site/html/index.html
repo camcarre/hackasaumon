@@ -6,21 +6,21 @@
 <body>
     <a href="secret.html">
     <h1>hackasaumon</h1>
-    <h1>hackasaumon</h1>
 </a>
 <div class="container">
         <p class="soustitre">Votre info de votre ordinateur des 24 dernières heures</p>    
 
         <div class="Texte">{{.Api}}</div>
       <section class="container-url">
+
+    <section class="filesurl">
         {{range .Url}}
         <div class="Url">{{.Adresse}} | {{.Nom}}</div>
-        <div class="Url">{{.Adresse}} | {{.Nom}}</div>
         {{end}}
-      </section>
-      
-        <div class="Fichier">{{.fichier}};</div>
 
+      
+        <div class="Fichier">aaaaaa {{.fichier}};</div>
+    </section>
       </div>
 
 
