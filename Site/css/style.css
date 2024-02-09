@@ -96,12 +96,8 @@ body{
 
     grid-row-end: 4;
     grid-column-end: 5;
+    white-space: nowrap;
    
 }
-
-
-
-
-
 
 
