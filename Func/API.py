@@ -10,12 +10,9 @@ def API():
           {"role": "user", "content": "donne moi la capital de la france(20mots maximum)"},
       ]
   )
-  return completion.choices[0].message.content
+  WriteTxt(completion.choices[0].message.content,"../Data/API.txt")
 
 def WriteTxt(respons,file):
     with open(file,"w") as text:
         text.write(respons)
     return
-
-response = API()
-WriteTxt(response,"API.txt")
