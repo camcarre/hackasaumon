@@ -31,6 +31,8 @@ func Home(w http.ResponseWriter, r *http.Request) {
 	for _, i := range urlsList {
 		page.Url = append(page.Url, saumon.Site{Adresse:i[0],Nom:i[1]})
 	}
+	
+	fmt.Println(page.Fichier[0])
 	templateIndex.Execute(w, page)
 }
 

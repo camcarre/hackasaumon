@@ -23,7 +23,7 @@ def WriteTxtAPI(response,file):
 
 def readTxt():
     listRecent = []
-    with open("../data/LastUsed.txt", "r", encoding="utf-16-le") as f:
+    with open("../Data/LastUsed.txt", "r", encoding="utf-16-le") as f:
         for line in f:
             folder = line.strip()
             folder_name = folder[:-4] if folder.endswith(".lnk") else folder
@@ -68,6 +68,8 @@ def scanWeb():
     return unique_urls
 
 def WriteTxtList(list,file):
+    if len(list) < 1:
+        return
     if type(list[0]) == str:
         with open(file,"w",encoding="utf-8") as text:
             for i in list:

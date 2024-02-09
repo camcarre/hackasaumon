@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 	"os"
-
 )
 
 type Page struct {
@@ -37,12 +36,22 @@ func SepartUrls(list []string) [][]string {
 	return final
 }
 func ReadFileList(filePath string) ([]string, error) {
-	content, err := os.ReadFile(filePath)
-	if err != nil {
-		return nil, err
+	file, _ := os.ReadFile(filePath)
+	word := ""
+	result := []string{}
+	for _, i := range file {
+		if i >= 128 {
+			continue
+		}
+		if string(i) == "\n" {
+			result = append(result,word)
+			word = ""
+			continue
+		}
+		word += string(i)
 	}
-	words := strings.Split(string(content),"\n")
-	return words, nil
+	fmt.Println(result[0][0])
+	return result, nil
 }
 
 func ReadFileString(filepath string) (string, error) {
