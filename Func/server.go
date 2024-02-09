@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"text/template"
 	saumon "hackasaumon/funcGo"
-
 )
 
 const port = ":8080"
@@ -20,7 +19,6 @@ func main() {
 	http.HandleFunc("/secret.html",func(w http.ResponseWriter, r *http.Request) {
         http.ServeFile(w, r, "../Site/html/secret.html")
     })
-
 	http.ListenAndServe(port, nil)
 }
 

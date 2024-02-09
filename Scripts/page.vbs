@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "page.bat", 0, True
