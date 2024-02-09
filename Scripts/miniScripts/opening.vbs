@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "C:/Users/%username%/Desktop/Hackasaumon/hackasaumon/Scripts/miniScripts/opening.bat", 0, True

@@ -5,6 +5,7 @@ h1{
     text-shadow: 5px 5px 5px grey;
     font-family: 'Protest Guerrilla', sans-serif;
     
+    
 
 }
 h1:hover{
@@ -13,6 +14,7 @@ h1:hover{
     text-align: center;
     transition: 0.1s;
     rotate: 720deg;
+    align-items: center;
     align-items: center;
 }
 p{
@@ -37,6 +39,9 @@ body{
     display: none;
 }
 
+a{ 
+    text-decoration: none;
+}
 a{ 
     text-decoration: none;
 }

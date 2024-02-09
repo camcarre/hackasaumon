@@ -1,1 +1,23 @@
-La capitale de l'Allemagne est Berlin.
+Voici un résumé des sites et fichiers mentionnés :
+
+Sites :
+1. Accident autoroute a47 - Recherche Google : Ce site présente des résultats de recherche sur un accident survenu sur l'autoroute A47.
+2. Switch oled - Recherche Google : Ce site propose des résultats de recherche sur l'écran OLED de la console de jeu Switch.
+
+Fichiers :
+1. CustomDestinations : Ce fichier est probablement lié aux préférences de destination personnalisées.
+2. Téléchargements : Ce dossier contient vraisemblablement des fichiers téléchargés.
+3. j9fkb33buj5c1.jpeg : Il s'agit d'un fichier image au format JPEG.
+4. makeitmeme_i9H3e.jpeg : Ce fichier semble être une image utilisée pour créer des mèmes.
+5. giphy.gif : Il s'agit d'un fichier image animée au format GIF provenant du site Giphy.
+6. Vidéo-sans-titre-e-Réalisée-avec-Clipchamp.gif : Ce fichier est une vidéo animée réalisée avec Clipchamp.
+7. Data : Ce dossier semble contenir des données.
+8. LastUsed.txt : Il s'agit probablement d'un fichier texte utilisé récemment.
+9. Vidéo sans titre e Réalisée avec Clipchamp (1).mp4 : Ce fichier est une vidéo sans titre réalisée avec Clipchamp.
+10. Jeu e Réalisée avec Clipchamp.mp4 : Ce fichier est une vidéo de jeu réalisée avec Clipchamp.
+11. Star 5.jpg : Il s'agit d'un fichier image au format JPEG intitulé "Star 5".
+12. Internet : Ce dossier semble contenir des documents relatifs à Internet.
+13. Captures d'écran : Ce dossier contient probablement des captures d'écran.
+14. Capture d'écran 2023-11-06 143802.png : Ce fichier est une capture d'écran enregistrée le 6 novembre 2023 à 14h38 et 02 secondes.
+15. Capture d'écran 2024-01-27 234227.png : Ce fichier est une capture d'écran enregistrée le 27 janvier 2024 à 23h42 et 27 secondes.
+16. Capture d'écran (13).png : Il s'agit probablement de la treizième capture d'écran enregistrée.

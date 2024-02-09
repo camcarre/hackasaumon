@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "C:/Users/%username%/Desktop/Hackasaumon/hackasaumon/Scripts/miniScripts/locking.bat", 0, True

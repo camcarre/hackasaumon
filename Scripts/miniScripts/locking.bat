@@ -13,5 +13,3 @@ cd "../Func"
 Powershell.exe -executionpolicy remotesigned -File GetFiles.ps1
 
 python3 ReadWrite.py
-go run server.go
-pause

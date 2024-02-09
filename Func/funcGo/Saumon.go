@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 	"os"
-	"log"
 
 )
 
@@ -53,15 +52,4 @@ func ReadFileString(filepath string) (string, error) {
 		return "", err
 	}
 	return string(text), nil
-}
-
-
-func InitApi() string{
-	API, err := ReadFileString("../Data/API.txt")
-	if err != nil {
-		log.Fatal(err)
-		return ""
-	}
-	return API
-
 }
