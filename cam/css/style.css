@@ -14,7 +14,7 @@ h1:hover{
     transition: 0.1s;
     rotate: 720deg;
 }
-p{
+.nonsecret{
     color: black;
     font-size: 20px;
     text-shadow: 10px 10px 10px grey;
@@ -100,6 +100,11 @@ body{
 }
 
 
-
-
-
+.soustitre{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 5px 5px 5px grey;
+    margin-left: 15%;
+    margin-right: 15%;
+}
