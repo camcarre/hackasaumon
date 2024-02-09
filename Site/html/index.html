@@ -12,20 +12,14 @@
 
         <div class="Texte">{{.Api}}</div>
       <section class="container-url">
+
+    <section class="filesurl">
         {{range .Url}}
         <div class="Url">{{.Adresse}} | {{.Nom}}</div>
         {{end}}
-      </section>
-        <p class="Fichier">{{.Fichier}};</p>
+        <div id="fichier">{{.fichier}};</div>
       </div>
-
-
-<div class="container">
-    <div class="soustitre"></div>
-    <div class="Url"></div>
-    <div class="Fichier"></div>
-    <div class="Texte"></div>
-  </div>
+    </section>
 
 
     
