@@ -37,6 +37,7 @@ func SepartUrls(list []string) [][]string {
 	return final
 }
 func ReadFileList(filePath string) ([]string, error) {
+	//binds the contents of the file and returns it as a list of string
 	file, _ := os.ReadFile(filePath)
 	word := ""
 	result := []string{}
@@ -55,6 +56,7 @@ func ReadFileList(filePath string) ([]string, error) {
 }
 
 func ReadFileString(filepath string) (string, error) {
+	//binds the contents of the file and returns it as a string
 	text, err := os.ReadFile(filepath)
 	if err != nil {
 		fmt.Println("Error:", err)

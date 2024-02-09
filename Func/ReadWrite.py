@@ -33,7 +33,7 @@ def readTxt():
     listRecent.reverse()
     return listRecent
 
-def doublon(list):
+def doublon(list): #checks for duplicate URLs and deletes them
     url = []
     final = []
     for i in list:
@@ -43,20 +43,21 @@ def doublon(list):
     return final
 
 def scanWeb():
+    #database connection
     conn = sqlite3.connect("../Data/History.db")
     cursor = conn.cursor()
 
     start_of_day = int(datetime.datetime.combine(datetime.date.today(), datetime.time.min).timestamp())
-
+    #Executing sql query
     cursor.execute("SELECT urls.url, urls.title FROM urls INNER JOIN visits ON urls.id = visits.url WHERE visits.visit_time >= ?", (start_of_day,))
     urls = cursor.fetchall()
-
+    #extract only the last 20 urls
     urls = urls[-20:]
 
     urls = doublon(urls)
 
     unique_urls = []
-
+    #Parse the URLs so that it displays correctly without additional elements
     for url in urls:
         index_com = url[0].find(".com")
         if index_com != -1:
