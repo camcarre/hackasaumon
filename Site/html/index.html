@@ -2,24 +2,32 @@
 <header>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-
 </header>
 <body>
-    <!--
     <a href="secret.html">
-    <h1>hackasaumon</h1>-->
+    <h1>hackasaumon</h1>
 </a>
-    <section class="nonsecret">
-    <p class="soustitre">Votre info de votre ordinateur des 24 dernières heures</p>
-    <div class="grid">
-        <div id="texte">{{.Api}}</div>
-        <div id="texte">{{.Url}}</div>
+<div class="container">
+        <p class="soustitre">Votre info de votre ordinateur des 24 dernières heures</p>    
+
+        <div class="Texte">{{.Api}}</div>
+      <section class="container-url">
         {{range .Url}}
-        <div id="url1">{{.Adresse}};</div>
+        <div class="Url">{{.Adresse}} | {{.Nom}}</div>
         {{end}}
-        <div id="fichier">{{.fichier}};</div>
+      </section>
+      
+        <div class="Fichier">{{.fichier}};</div>
+
       </div>
-    </section>
+
+
+<div class="container">
+    <div class="soustitre"></div>
+    <div class="Url"></div>
+    <div class="Fichier"></div>
+    <div class="Texte"></div>
+  </div>
 
 
     
