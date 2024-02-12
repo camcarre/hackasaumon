@@ -1,3 +1,0 @@
-CustomDestinations
-jb
-LastUsed.txt
